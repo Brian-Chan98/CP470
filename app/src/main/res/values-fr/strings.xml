@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assignment 1</string>
-    <string name="hello_message">Bonjour World!</string>
-    <string name="ButtonText">I\'m a button</string>
+    <string name="app_name">Affectation 2</string>
+    <string name="hello_message">Bonjour le Monde!</string>
+    <string name="ButtonText">Je suis un bouton</string>
+    <string name="LoginTitle">S\'identifier</string>
+    <string name="LoginHint">Identifiant</string>
+    <string name="PasswordTitle">mot de passe</string>
+    <string name="Switch">qu\'est-ce que cela fait?</string>
+    <string name="RadioButton">bouton radio</string>
+    <string name="Checkbox">case à cocher</string>
 </resources>
