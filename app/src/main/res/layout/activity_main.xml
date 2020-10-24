@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_message"
@@ -18,11 +19,24 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/listItem_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/ButtonText"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintEnd_toStartOf="@+id/chatWindow_Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chatWindow_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/ChatButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/listItem_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listItem_Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

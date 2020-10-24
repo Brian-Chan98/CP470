@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected static final String ACTIVITY_NAME = "MainActivity";
     private Button listItemsButton;
+    private Button chatWindowButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +22,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.i(ACTIVITY_NAME, "In onCreate()");
 
-        listItemsButton = (Button) findViewById(R.id.button);
+        listItemsButton = (Button) findViewById(R.id.listItem_Button);
+        chatWindowButton = (Button) findViewById(R.id.chatWindow_Button);
 
         listItemsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ListItemsActivity.class);
                 startActivityForResult(intent, 10);
+            }
+        });
+
+        chatWindowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(ACTIVITY_NAME, "User Clicked Start Chat");
+                Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+                startActivity(intent);
             }
         });
     }

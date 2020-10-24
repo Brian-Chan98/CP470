@@ -16,4 +16,6 @@
     <string name="cancel">Annuler</string>
     <string name="switchOn">L\'interrupteur est activé</string>
     <string name="switchOff">Le commutateur est désactivé</string>
+    <string name="ChatButton">Commence à parler</string>
+    <string name="ChatSend">envoyer</string>
 </resources>
