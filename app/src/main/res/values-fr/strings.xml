@@ -18,4 +18,7 @@
     <string name="switchOff">Le commutateur est désactivé</string>
     <string name="ChatButton">Commence à parler</string>
     <string name="ChatSend">envoyer</string>
+    <string name="ToolbarButton">Démarrer la barre d\'outils</string>
+    <string name="GoBack">Voulez-vous revenir en arrière?</string>
+    <string name="ChangeSnack">Définir le texte de l\'option un Snackbar?</string>
 </resources>
