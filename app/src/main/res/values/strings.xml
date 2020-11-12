@@ -17,4 +17,7 @@
     <string name="switchOff">Switch is Off</string>
     <string name="ChatButton">Start Chat</string>
     <string name="ChatSend">Send</string>
+    <string name="ToolbarButton">Start Toolbar</string>
+    <string name="GoBack">Do you want to go back?</string>
+    <string name="ChangeSnack">Set option one Snackbar text?</string>
 </resources>

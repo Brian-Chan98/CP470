@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "MainActivity";
     private Button listItemsButton;
     private Button chatWindowButton;
+    private Button testToolbarButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         listItemsButton = (Button) findViewById(R.id.listItem_Button);
         chatWindowButton = (Button) findViewById(R.id.chatWindow_Button);
+        testToolbarButton = (Button) findViewById(R.id.TestToolbar_Button);
 
         listItemsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.i(ACTIVITY_NAME, "User Clicked Start Chat");
                 Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+                startActivity(intent);
+            }
+        });
+
+        testToolbarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestToolbar.class);
                 startActivity(intent);
             }
         });

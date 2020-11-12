@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/one"
+        android:title="Option 1"
+        android:icon="@drawable/basketball"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/two"
+        android:title="Option 2"
+        android:icon="@drawable/football"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/three"
+        android:title="Option 3"
+        android:icon="@drawable/soccerball"
+        android:orderInCategory="3"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/about"
+        android:title="About Menu"
+        app:showAsAction="never"
+        android:orderInCategory="4"/>
+
+
+</menu>
